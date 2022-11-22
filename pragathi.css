@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    outline: none;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: none;
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.projecthome {
+
+    padding: 60px;
+    text-align: center;
+    background-color: black;
+    height: 100vh;
+}
+
+.projecthome-heading {
+    color: red;
+    font-family: "Serif";
+}
+
+.projecthome-image {
+    height: 25px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.projecthome-para {
+    color: white;
+    font-family: "Roboto";
+}
+
+.projecthome-form {
+    padding: 10px;
+    margin: 10px;
+}
+
+.for-signup {
+    color: blue;
+}
+
+.for-forgetpass {
+    color: red;
+}
+
+.button-projecthome {
+    width: 116px;
+    margin: 20px;
+}
+
+.projecthome-para {
+    color: green;
+}
+
+.projectsecond-paragraph {
+    font-weight: bold;
+    font-family: "Roboto";
+    color: #bf1b7d;
+
+}
+
+.projectsecond {
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.section-homepage-lastpara {
+    color: gray;
+}
+
+.projectsecond-card-home {
+    background-color: black;
+}
+
+.for-startnow {
+    width: 30px;
+    text-align: right;
+    padding: 10px;
+}
+
+.for-right {
+    text-align: right;
+}
+
+.projectsecond-card-heading {
+    color: red;
+    font-family: "Sans-Serif";
+    font-size: 25px;
+}
+
+.projectsecond-card-totalmarks {
+    color: white;
+}
+
+.projectsecond-card-fornonsubscribe {
+    color: orange;
+}
+
+.projectsecond-card-tatalsubscribers {
+    color: yellow;
+}
+
+.projectsecond-card-CompletionPercentage {
+    color: #C69749;
+}
+
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 3px;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.grid-item {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    text-align: center;
+
+}
