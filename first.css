@@ -83,12 +83,54 @@
     color: #06113c;
 }
 
+
+.arrow{
+    border:solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+
+.right{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(135deg);
+}
+
+
 .second-button{
     color:#06113c;
     background-color: #eee;
     border: 0px;
     
     font-weight: bold;
+}
+
+.for-heading-intable{
+    color: #ff8c32;
+}
+
+.for-data-intable{
+    color: #06113c;
+}
+
+
+.for-table-background{
+    height: 100vh;
+    background-color: #eee;
+}
+
+.for-status{
+    color: green;
+}
+
+
+@media only screen and (max-width:500px){
+    .grid-container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr  0.4fr 0.4fr;
+       
+    }
 }
 
 
