@@ -127,7 +127,7 @@
 
 @media only screen and (max-width:500px){
     .grid-container{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr  0.4fr 0.4fr;
        
     }
