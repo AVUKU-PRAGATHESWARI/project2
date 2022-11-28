@@ -10,12 +10,14 @@
 .projecthome-heading {
     color: #ff8c32;
     font-family: "Serif";
+    text-align: center;
 }
 
 
 .projecthome-para{
     color:#06113c;
     font-family: "Roboto";
+    text-align: center;
 }
 
 .projecthome-form {
@@ -125,12 +127,29 @@
 }
 
 
-@media only screen and (max-width:500px){
+@media (max-width:898px ){
     .grid-container{
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr  0.4fr 0.4fr;
+       
+    }
+}
+
+@media (max-width:798px ){
+    .grid-container{
+        grid-template-columns: 1fr 1fr;
+
         grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr  0.4fr 0.4fr;
        
     }
 }
 
 
+@media (max-width:568px){
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.4fr 0.4fr 0.4fr  0.4fr 0.4fr;
+       
+    }
+}
